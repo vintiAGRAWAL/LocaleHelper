@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.vinti.localehelper</id>
+    <name>Locale Helper</name>
+    <version>0.0.1</version>
+    <vendor email="vagrawal@g2.com" url="https://www.linkedin.com/in/vinti-agrawal-166306222/">Vinti Agrawal</vendor>
+
+    <description>
+        Extracts selected text in Slim/HTML files and adds it to vendor_admin YAML automatically.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="com.vinti.localehelper.ExtractI18nAction"
+                class="com.vinti.localehelper.ExtractI18nAction"
+                text="Extract i18n"
+                description="Extract selected text to vendor_admin YAML">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
